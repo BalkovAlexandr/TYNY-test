@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TYNY 2019</title>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="header__container container">
+        <h1 class="header__title">TYNY 2019</h1>
+        <div class="header__icon">
+          <span></span>
+        </div>
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Конференция</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Программа</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Спикеры</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Фото</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Материалы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link-btn">Регистрация</a>
+            </li>
+          </ul>
+          <div class="menu__social">
+            <a href="#" class="menu__social-link menu__social-link-mail"></a>
+            <a href="#" class="menu__social-link menu__social-link-facebook"></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+
+      <section class="promo">
+        <div class="promo__container container">
+          <div class="promo__content">
+            <div class="promo__wrapper">
+              <div class="promo__image">
+                <img src="./images/promo.png" alt="promo">
+              </div>
+              <div class="promo__image">
+                <img src="./images/promo-dialog.png" alt="promo-dialog">
+              </div>
+            </div>
+            <div class="promo__info">
+              <a class="promo__button">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+              <div class="promo__image_small">
+                <img src="./images/promo-dialog.png" alt="promo-dialog">
+              </div>
+              <p class="promo__title">
+                Команда рекламного холдинга GroupM рада открыть для вас двери digital-конференции NextM!
+              </p>
+              <p class="promo__subtitle">
+                NextM – это ежегодная digital-конференция, организованная ведущей международной рекламной группой GroupM, входящей в состав
+                коммуникационного холдинга WPP и представленной в России агентствами Mindshare, MediaCom и Wavemaker.
+              </p>
+            </div>
+            <a href="#" class="promo__arrow"></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="speakers">
+        <div class="speakers__container container">
+          <div class="swiper">
+            <h1 class="swiper__title">Спикеры</h1>
+            <div class="swiper-wrapper">
+      
+              <div class="swiper-slide">
+                <div class="swiper-slide__container">
+                  <img src="./images/speaker.jpg">
+                  <div>
+                    <p>Ярон Фаризон</p>
+                    <p>CEO MediaCom</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="swiper-slide">
+                <div class="swiper-slide__container">
+                  <img src="./images/speaker.jpg">
+                  <div>
+                    <p>Ярон Фаризон</p>
+                    <p>CEO MediaCom</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="swiper-slide">
+                <div class="swiper-slide__container">
+                  <img src="./images/speaker.jpg">
+                  <div>
+                    <p>Ярон Фаризон</p>
+                    <p>CEO MediaCom</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="swiper-slide">
+                <div class="swiper-slide__container">
+                  <img src="./images/speaker.jpg">
+                  <div>
+                    <p>Ярон Фаризон</p>
+                    <p>CEO MediaCom</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="swiper-slide">
+                <div class="swiper-slide__container">
+                  <img src="./images/speaker.jpg">
+                  <div>
+                    <p>Ярон Фаризон</p>
+                    <p>CEO MediaCom</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="swiper-slide">
+                <div class="swiper-slide__container">
+                  <img src="./images/speaker.jpg">
+                  <div>
+                    <p>Ярон Фаризон</p>
+                    <p>CEO MediaCom</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section> 
+
+      <section class="sending">
+        <div class="sending__container container">
+          <form class="form" novalidate>
+            <h2 class="form__title">Отправить сообщение</h2>
+            <label class="form__label">
+              <input type='text' class="form__input input" placeholder="Ваше имя" minlength="2" maxlength="30" name='name' required>
+              <input type='email' class="form__input input" placeholder="Email" minlength="2" maxlength="30" name='email' required>
+            </label>
+            <textarea type='text' class="form__textarea input" placeholder="Ваше сообщение" minlength="2" maxlength="200" name='message' required></textarea>
+            <button class="form__button">ОТПРАВИТЬ</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <p class="footer__email">info@groupmnextm.ru</p>
+        <p class="footer__phone-number">+7 (495) 641-40-80</p>
+        <a href='#' class="footer__info">Правовая информация</a>  
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>

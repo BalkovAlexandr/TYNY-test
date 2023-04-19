@@ -1,0 +1,10 @@
+$mainColor: #0A2756;
+$lightColor: #fff;
+$btnColor: #007DFE;
+
+@mixin font($fw, $style, $fs, $lh) {
+  font-weight: $fw;
+  font-style: $style;
+  font-size: $fs;
+  line-height: $lh;
+}

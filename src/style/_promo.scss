@@ -1,0 +1,149 @@
+.promo {
+  background-color: $mainColor;
+  padding-bottom: 80px;
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 30px 0 20px;
+    box-sizing: content-box;
+  }
+
+  &__content {
+    max-width: 1034px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__wrapper {
+    margin: 30px 0 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__image {
+    max-width: 535px;
+
+    &_small {
+      display: none;
+    }
+
+    &:first-of-type {
+      margin-top: 40px;
+    }
+    & > img {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    max-width: 510px;
+    margin-left: 60px;
+    margin-bottom: 50px;
+  }
+
+  &__button {
+    max-width: 423px;
+    height: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include font(700, normal, 14px, 20px);
+    letter-spacing: 0.67em;
+    color: $lightColor;
+    background-color: $btnColor;
+    cursor: pointer;
+    margin-bottom: 48px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__title {
+    @include font(550, normal, 20px, 26px);
+    color: $lightColor;
+    margin-bottom: 40px;
+  }
+
+  &__subtitle {
+    @include font(400, normal, 18px, 25px);
+    color: $lightColor;
+  }
+
+  &__arrow {
+    align-self: center;
+    height: 28px;
+    width: 85px;
+    background: url('./images/arrow-down.svg') transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    &:hover {
+      transform: translate(0, 5px)
+    }
+  }
+}
+
+@media screen and (max-width: 1139px) {
+  .promo {
+    &__wrapper {
+      margin: 50px 0 70px;
+    }
+
+    &__image {
+      max-width: 394px;
+
+      &:last-of-type {
+        max-width: 244px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .promo {
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__container {
+      justify-content: center;
+      padding: 0 20px;
+    }
+
+    &__image {
+      max-width: 510px;
+      &:last-of-type {
+        display: none;
+      }
+
+      &_small {
+        display: block;
+        max-width: 397px;
+        margin-bottom: 48px;
+
+        & > img {
+          width: 100%;
+        }
+      }
+    }
+
+    &__button {
+      letter-spacing: 0.3em;
+    }
+
+    &__info {
+      margin-left: 0px;
+    }
+
+    &__arrow {
+      display: none;
+    }
+  }
+}

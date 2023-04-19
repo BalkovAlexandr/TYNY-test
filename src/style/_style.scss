@@ -1,0 +1,26 @@
+@import './header';
+@import './promo';
+@import './speakers';
+@import './sending';
+@import './footer';
+
+body {
+  font-family: 'HelveticaNeueCyr';
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.page {
+  flex: 1 1 auto;
+  background-color: $mainColor;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}

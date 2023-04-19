@@ -1,0 +1,56 @@
+.footer {
+  background-color: $mainColor;
+  padding-bottom: 160px;
+  color: $lightColor;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__email {
+    @include font(300, normal, 40px, 56px);
+    margin-bottom: 5px
+  }
+
+  &__phone-number {
+    @include font(300, normal, 32px, 45px);
+    margin-bottom: 15px;
+  }
+
+  &__info {
+    @include font(300, normal, 18px, 25px);
+    border-bottom: 1px solid $lightColor;
+    color: $lightColor;
+  }
+}
+
+@media screen and (max-width: 1139px) {
+  .footer {
+    padding-bottom: 90px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding-bottom: 110px;
+
+    &__email {
+      font-size: 28px;
+      line-height: 39px;
+    }
+  
+    &__phone-number {
+      font-size: 22px;
+      line-height: 31px;
+    }
+  
+    &__info {
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+}
